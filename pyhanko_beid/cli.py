@@ -1,8 +1,7 @@
 import contextlib
-from typing import List, ContextManager, Optional
+from typing import ContextManager, List, Optional
 
 import click
-
 from pyhanko.cli._ctx import CLIContext
 from pyhanko.cli.commands.signing.pkcs11_cli import (
     UNAVAIL_MSG,
@@ -10,7 +9,7 @@ from pyhanko.cli.commands.signing.pkcs11_cli import (
 )
 from pyhanko.cli.config import CLIConfig
 from pyhanko.cli.plugin_api import SigningCommandPlugin
-from pyhanko.cli.utils import readable_file, logger
+from pyhanko.cli.utils import logger, readable_file
 from pyhanko.sign import Signer
 
 

@@ -4,8 +4,8 @@ import pytest
 import yaml
 from click.testing import CliRunner
 from pyhanko.cli import cli_root
-from pyhanko.sign import SimpleSigner
 from pyhanko.cli.plugin_api import register_signing_plugin
+from pyhanko.sign import SimpleSigner
 
 INPUT_PATH = 'input.pdf'
 SIGNED_OUTPUT_PATH = 'output.pdf'

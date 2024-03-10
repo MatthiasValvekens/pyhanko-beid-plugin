@@ -7,7 +7,6 @@ read the appropriate certificates on the device.
 """
 
 from pkcs11 import Session
-
 from pyhanko.sign import pkcs11 as sign_pkcs11
 
 __all__ = ['open_beid_session', 'BEIDSigner']
