@@ -34,7 +34,7 @@ classifiers = [
 ]
 requires-python = ">=3.8"
 dependencies = [
-    "pyHanko[pkcs11]>=0.22.0",
+    "pyHanko[pkcs11]>=0.23.0",
 ]
 version = "0.1.0"
 
