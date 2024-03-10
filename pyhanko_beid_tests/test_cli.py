@@ -36,6 +36,7 @@ MINIMAL = _read_minimal()
 def cli_runner():
 
     from pyhanko_beid.cli import BEIDPlugin
+
     register_signing_plugin(BEIDPlugin)
 
     runner = CliRunner()
