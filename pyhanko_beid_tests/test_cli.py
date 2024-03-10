@@ -9,7 +9,7 @@ from pyhanko.sign import SimpleSigner
 
 INPUT_PATH = 'input.pdf'
 SIGNED_OUTPUT_PATH = 'output.pdf'
-DATA_DIR = Path('pyhanko_beid_tests') / 'data'
+DATA_DIR = Path(__file__).parent / 'data'
 
 
 def _write_config(config: dict, fname: str = 'pyhanko.yml'):
