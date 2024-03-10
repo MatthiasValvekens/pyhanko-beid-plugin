@@ -87,4 +87,3 @@ log_cli = true
 log_cli_level = "INFO"
 norecursedirs = "testdata"
 testpaths = "pyhanko_beid_tests"
-asyncio_mode = "strict"
