@@ -55,7 +55,7 @@ beid = "pyhanko_beid.cli:BEIDPlugin"
 testing = [
     "pyhanko-beid-plugin",
     "pytest>=6.1.1",
-    "pytest-cov>=4.0,<4.2",
+    "pytest-cov>=4.0,<5.1",
 ]
 mypy = [
     "pyhanko-beid-plugin",
