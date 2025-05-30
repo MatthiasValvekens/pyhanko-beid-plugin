@@ -89,7 +89,7 @@ jobs:
         files: |
           dist/*.whl
           dist/*.tar.gz
-          dist/*.sigstore
+          dist/*.sigstore.json
           provenance/multiple.intoto.jsonl
         fail_on_unmatched_files: true
         discussion_category_name: Announcements
