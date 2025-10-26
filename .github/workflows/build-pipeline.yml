@@ -37,7 +37,7 @@ jobs:
         id: artifact-hashes
         run: cd dist && echo "hashes=$(sha256sum * | base64 -w0)" >> "$GITHUB_OUTPUT"
       - name: Upload dist artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: plugin-dist
           path: dist/
@@ -70,7 +70,7 @@ jobs:
         env:
           PKCS11_TEST_MODULE: ${{ env.SOFTHSM2_MODULE_PATH }}
       - name: Stash coverage report
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: coverage-${{ strategy.job-index }}
           path: "*-coverage.xml"
